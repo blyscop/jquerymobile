@@ -250,3 +250,4 @@ html .ui-alt-icon .ui-radio-off:after {
 .ui-li-static.ui-collapsible > .ui-collapsible-content {
     border-left-width: 0;
 }
+#imgindex { display: block; margin-left: auto; margin-right: auto;}
