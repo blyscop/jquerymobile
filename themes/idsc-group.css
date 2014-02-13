@@ -904,4 +904,154 @@ button[disabled],
 	outline-width: 1px;
 	outline-style: auto;
 }
-			
+
+jQuery Mobile1.4.0 DEMOSSearch
+Indented collapsible list items
+
+You can create indented collapsible list items by instantiating collapsible widgets on them and adding some custom CSS to collapse borders and padding. In all the examples below, the outermost listview has class ui-listview-outer to identify it as the outermost listview in the tree structure of indented lists.
+
+Quick Links
+Regular listview
+
+Birds click to expand contents
+Humans
+Fish click to expand contents
+Choose your preference click to collapse contents
+
+Birds
+
+Humans
+
+Fish
+
+View Source
+Top
+Inset listview
+
+Birds click to collapse contents
+Condor
+Eagle
+Sparrow
+Humans
+Fish click to expand contents
+Choose your preference click to collapse contents
+
+Birds
+
+Humans
+
+Fish
+
+View Source
+Home
+Introduction
+Buttons
+Button widget
+Checkboxradio widget click to expand contents
+Collapsible (set) widget click to expand contents
+Controlgroup widget click to expand contents
+Datepicker
+Events click to expand contents
+Filterable widget
+Flipswitch widget
+Forms click to expand contents
+Grids click to expand contents
+Grouping and dividing content
+Icons click to expand contents
+Listview widget click to expand contents
+Loader widget
+Navbar widget
+Navigation click to expand contents
+Pages click to expand contents
+Panel widget click to expand contents
+Popup widget click to expand contents
+Rangeslider widget
+Responsive Web Design
+Selectmenu widget click to expand contents
+Slider widget click to expand contents
+Table widget click to expand contents
+Tabs widget
+Textinput widget
+Theming click to expand contents
+Toolbar widget click to expand contents
+Transitions
+3rd party API demos click to expand contents
+jQuery Mobile Demos version 1.4.0Copyright 2013 The jQuery Foundation
+HTML click to expand contents
+CSS click to collapse contents
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+/* Basic settings */
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    border-bottom-width: 0;
+}
+/* collapse vertical borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-last-child,
+.ui-li-static.ui-collapsible.ui-collapsible-collapsed > .ui-collapsible-heading > a.ui-btn {
+    border-bottom-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li.ui-first-child > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn {
+    border-top-width: 0;
+}
+/* Remove right borders */
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > .ui-li-static,
+.ui-li-static.ui-collapsible > .ui-collapsible-content > .ui-listview > li > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-right-width: 0;
+}
+/* Remove left borders */
+/* Here, we need class ui-listview-outer to identify the outermost listview */
+.ui-listview-outer > .ui-li-static.ui-collapsible .ui-li-static.ui-collapsible.ui-collapsible,
+.ui-listview-outer > .ui-li-static.ui-collapsible > .ui-collapsible-heading > a.ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-left-width: 0;
+}
