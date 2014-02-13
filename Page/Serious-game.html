@@ -12,11 +12,25 @@
 	</head>
 	<body>
 		<div data-role="page" data-theme="b">		
-			<div data-role="header" data-position="inline">			
-				<h1>Serious-game</h1>
+			<div data-role="header" data-position="inline">							
+				<h1>Serious-game</h1>				
+				<a href="#popupNested" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-left ui-btn-b ui-btn-icon-notext" data-transition="pop"></a>
+<div data-role="popup" id="popupNested" data-theme="none">
+    <div data-role="collapsible-set" data-theme="b" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:100%;">
+       
+            <ul data-role="listview">
+                <li><a href="Societe.html"><h2>Societe</h2></a></li>        
+    			<li><a href="Technical-serious-game.html"><h2>Technical serious-game</h2></a></li>
+       			 <li><a href="Realite-virtuelle.html"><h2>Réalitée virtuelle</h2></a></li>
+       			 <li><a href="E-book.html"><h2>E-book</h2></a></li>
+       			 <li><a href="Reference.html"> <h2>Référence</h2></a></li>    
+            </ul>
+    </div><!-- /collapsible set -->
+</div><!-- /popup -->
 			</div>
-			<img src="http://www.idsc-group.com/wp-content/uploads/2014/01/bandeau-serious-game-copie.jpg">			
-			
+			<div>
+			<img style="width: 100%;" src="http://www.idsc-group.com/wp-content/uploads/2014/01/bandeau-serious-game-copie.jpg">			
+			</div>
 				<div class="ui-body ui-body-b">
 
 <p style="text-align: justify;"><img class=" wp-image-722 alignleft" style="margin-top: 20px;" alt="Building" src="http://www.idsc-group.com/wp-content/uploads/2014/01/Building.png">Pour transférer le savoir et le savoir-faire inhérents à chaque organisation, les opérateurs doivent disposer d’outils internes simples et faciles d’appropriation.&nbsp;<strong>Les technologies numériques, nouveaux vecteurs d’apprentissage, permettent l’association du jeu et de la transmission du patrimoine technique, scientifique, (etc.)&nbsp;de l’entreprise.</strong></p>
@@ -41,7 +55,7 @@
 	<div data-role="footer" class="nav-glyphish-example" data-theme="b">
     <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
     <ul>
-        <li><a href="#" id="chat" data-icon="custom">Chat</a></li>
+        <li><a href="#" id="Contact" data-icon="custom">Contact</a></li>
         <li><a href="#" id="email" data-icon="custom">Email</a></li>
         <li><a href="#" id="skull" data-icon="custom">Danger</a></li>
         <li><a href="#" id="beer" data-icon="custom">Beer</a></li>
